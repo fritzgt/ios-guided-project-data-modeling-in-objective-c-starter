@@ -10,4 +10,24 @@
 
 @implementation FGTQuake
 
+
+-(instancetype)initWithMagnitude:(double)aMagnitude
+                           place:(NSString *)aPlace
+                            time:(NSDate *)aTime
+                        latidude:(double)aLatidude
+                       longitude:(double)aLongitude{
+    
+    self = [super init];
+    if(self){
+        _magnitude = aMagnitude;
+        _place = aPlace;
+        _time = aTime;
+        _latidude = aLatidude;
+        _longitude = aLongitude;
+    }
+    
+    return self;
+}
+
+
 @end
