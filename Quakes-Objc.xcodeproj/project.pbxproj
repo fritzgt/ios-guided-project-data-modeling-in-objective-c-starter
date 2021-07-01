@@ -81,6 +81,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E7A57A268DE52C00D6394F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F9223FDA0A100A39B21 /* main.m */,
+				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
+				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
+				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
+				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
+				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
+				BDFC8F9123FDA0A100A39B21 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		04E7A57B268DE54500D6394F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
+				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04E7A580268DE57A00D6394F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
+				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BDFC8F7423FDA09F00A39B21 = {
 			isa = PBXGroup;
 			children = (
@@ -102,19 +134,11 @@
 		BDFC8F7F23FDA09F00A39B21 /* Quakes-Objc */ = {
 			isa = PBXGroup;
 			children = (
-				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
-				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
-				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
-				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
-				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
-				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
-				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
-				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
-				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
-				BDFC8F9123FDA0A100A39B21 /* Info.plist */,
+				04E7A580268DE57A00D6394F /* Views */,
+				04E7A57B268DE54500D6394F /* Storyboards */,
+				04E7A57A268DE52C00D6394F /* Resources */,
 				BDFC8FBA23FDA13F00A39B21 /* JSON */,
 				BDFC8FB923FDA12F00A39B21 /* LambdaSDK */,
-				BDFC8F9223FDA0A100A39B21 /* main.m */,
 			);
 			path = "Quakes-Objc";
 			sourceTree = "<group>";
@@ -194,7 +218,7 @@
 		BDFC8F7523FDA09F00A39B21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Lambda, Inc";
 				TargetAttributes = {
 					BDFC8F7C23FDA09F00A39B21 = {
@@ -331,6 +355,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -389,6 +414,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -420,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
