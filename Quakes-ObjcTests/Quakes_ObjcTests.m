@@ -14,4 +14,11 @@
 
 @implementation Quakes_ObjcTests
 
+//Create test for the model
+-(void)testQuakeParsing
+{
+    
+}
+
+
 @end
