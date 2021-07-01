@@ -1,5 +1,5 @@
 //
-//  FGTFirstResponder.h
+//  FGTQuake.h
 //  Quakes-Objc
 //
 //  Created by FGT MAC on 7/1/21.
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FGTFirstResponder : NSObject
-
-@property (nonatomic, copy) NSString *name;
- 
+@interface FGTQuake : NSObject
 
 @end
 
 NS_ASSUME_NONNULL_END
+ 
