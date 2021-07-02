@@ -125,6 +125,19 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		04E7A59C268DFEF100D6394F /* LambdaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */,
+				BDFC8FB023FDA12B00A39B21 /* LSIErrors.h */,
+				BDFC8FB123FDA12B00A39B21 /* LSIFileHelper.h */,
+				BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */,
+				BDFC8FAD23FDA12B00A39B21 /* LSILog.h */,
+				BDFC8FAF23FDA12B00A39B21 /* LSILog.m */,
+			);
+			name = LambdaSDK;
+			sourceTree = "<group>";
+		};
 		BDFC8F7423FDA09F00A39B21 = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +163,7 @@
 				04E7A57B268DE54500D6394F /* Storyboards */,
 				04E7A57A268DE52C00D6394F /* Resources */,
 				BDFC8FBA23FDA13F00A39B21 /* JSON */,
-				BDFC8FB923FDA12F00A39B21 /* LambdaSDK */,
+				04E7A59C268DFEF100D6394F /* LambdaSDK */,
 				04E7A593268DF46E00D6394F /* Model */,
 			);
 			path = "Quakes-Objc";
@@ -163,19 +176,6 @@
 				BDFC8F9E23FDA0A100A39B21 /* Info.plist */,
 			);
 			path = "Quakes-ObjcTests";
-			sourceTree = "<group>";
-		};
-		BDFC8FB923FDA12F00A39B21 /* LambdaSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BDFC8FB023FDA12B00A39B21 /* LSIErrors.h */,
-				BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */,
-				BDFC8FB123FDA12B00A39B21 /* LSIFileHelper.h */,
-				BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */,
-				BDFC8FAD23FDA12B00A39B21 /* LSILog.h */,
-				BDFC8FAF23FDA12B00A39B21 /* LSILog.m */,
-			);
-			path = LambdaSDK;
 			sourceTree = "<group>";
 		};
 		BDFC8FBA23FDA13F00A39B21 /* JSON */ = {

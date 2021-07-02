@@ -30,4 +30,10 @@
 }
 
 
+- (instancetype)initWithDictionary:(NSDictionary *)aDictionary
+{
+    return  nil;
+}
+
+
 @end
