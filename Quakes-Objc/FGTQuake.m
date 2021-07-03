@@ -14,12 +14,12 @@
 - (instancetype)init
 {
     return [self initWithMagnitude: 0
-                              place: @""
-                               time: NSDate.now
-                           latidude:0
-                          longitude:0
-                               type: @""
-                              alert:nil];
+                             place: @""
+                              time: NSDate.now
+                          latidude: 0
+                         longitude: 0
+                              type: @""
+                             alert: nil];
 }
 
 -(instancetype)initWithMagnitude:(double)aMagnitude
@@ -73,16 +73,26 @@
     NSArray *coordinates = [geometry objectForKey:@"coordinates"];
     if(![coordinates isKindOfClass:NSArray.class])return nil;
     
-    NSNumber *lat = nil;
     NSNumber *lon = nil;
+    NSNumber *lat = nil;
+    
     
     //Check the count to make sure we have at least two items in array
     if(coordinates.count >= 2){
-        lat = [coordinates objectAtIndex:0];
-        lon = [coordinates objectAtIndex:1];
-        if(![lat isKindOfClass:NSNumber.class])return nil;
+        lon = [coordinates objectAtIndex:0];
         if(![lon isKindOfClass:NSNumber.class]) return nil;
+        
+        lat = [coordinates objectAtIndex:1];
+        if(![lat isKindOfClass:NSNumber.class])return nil;
     }
+    
+    
+    NSString *type = [properties objectForKey:@"type"];
+    if(![type isKindOfClass:NSString.class]) return nil;
+    
+    NSString *alert = [properties objectForKey:@"alert"];
+    if(![alert isKindOfClass:NSString.class]) return nil;
+    
     
     //2.Return the properties to the init
     return  [self initWithMagnitude: magnitude.doubleValue
@@ -90,8 +100,8 @@
                                time: time
                            latidude: lat.doubleValue
                           longitude: lon.doubleValue
-                               type: @""
-                              alert: nil];
+                               type: type
+                              alert: alert];
 }
 
 

@@ -22,12 +22,21 @@
 {
     //Get the data
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Quake" ofType:@"json"];
-    NSData *quakeData = [[NSData alloc] initWithContentsOfFile:filePath];
+    NSData *quakeMockData = [[NSData alloc] initWithContentsOfFile:filePath];
     
-    XCTAssertNotNil(quakeData);
-    XCTAssertTrue(quakeData isKindOfClass:NSDictionary.class);
+    NSError *jsonError;
+    NSDictionary *data = [NSJSONSerialization
+                          JSONObjectWithData:quakeMockData
+                          options:0
+                          error:&jsonError];
     
-//    FGTQuake *quake = [[FGTQuake alloc] initWithDictionary:quakeDictionary];
+    if(![data isKindOfClass:NSDictionary.class]){
+        NSLog(@"%@", jsonError);
+    }
+    
+    XCTAssertNotNil(data);
+    XCTAssertTrue([data isKindOfClass: NSDictionary.class]);
+    
 }
 
 
