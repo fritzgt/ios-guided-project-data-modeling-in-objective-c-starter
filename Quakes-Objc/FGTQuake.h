@@ -18,11 +18,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) double latidude;
 @property (nonatomic, readonly) double longitude;
 
+@property (nonatomic, readonly, copy) NSString *type;
+@property (nonatomic, readonly, copy, nullable) NSString *alert;
+
+
 -(instancetype)initWithMagnitude:(double)aMagnitude
                            place:(NSString *)aPlace
                             time:(NSDate *)aTime
                         latidude:(double)aLatidude
-                       longitude:(double)aLongitude;
+                       longitude:(double)aLongitude
+                            type:(NSString *)aType
+                           alert:(NSString *)aAlert NS_DESIGNATED_INITIALIZER;//MArk as desinated init because this will be the one that calls super
 
 - (instancetype)initWithDictionary:(NSDictionary *)aDictionary;
 
