@@ -19,7 +19,7 @@
                           latidude: 0
                          longitude: 0
                               type: @""
-                             alert: nil];
+                             alert: @""];
 }
 
 -(instancetype)initWithMagnitude:(double)aMagnitude
@@ -43,7 +43,6 @@
     
     return self;
 }
-
 
 - (instancetype)initWithDictionary:(NSDictionary *)aDictionary
 {

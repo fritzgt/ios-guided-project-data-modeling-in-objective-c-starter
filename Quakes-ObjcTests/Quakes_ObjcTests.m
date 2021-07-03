@@ -30,13 +30,8 @@
                           options:0
                           error:&jsonError];
     
-    if(![data isKindOfClass:NSDictionary.class]){
-        NSLog(@"%@", jsonError);
-    }
-    
     XCTAssertNotNil(data);
     XCTAssertTrue([data isKindOfClass: NSDictionary.class]);
-    
 }
 
 

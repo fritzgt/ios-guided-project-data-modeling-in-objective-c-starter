@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04E7A590268DF46300D6394F /* FGTQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A58F268DF46300D6394F /* FGTQuake.m */; };
+		04EE6D3A26903EB1004283D2 /* FGTQuakeResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE6D3926903EB1004283D2 /* FGTQuakeResults.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		04E7A58E268DF46300D6394F /* FGTQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTQuake.h; sourceTree = "<group>"; };
 		04E7A58F268DF46300D6394F /* FGTQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTQuake.m; sourceTree = "<group>"; };
+		04EE6D3826903EB1004283D2 /* FGTQuakeResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTQuakeResults.h; sourceTree = "<group>"; };
+		04EE6D3926903EB1004283D2 /* FGTQuakeResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTQuakeResults.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				BDFC8FBA23FDA13F00A39B21 /* JSON */,
 				04E7A59C268DFEF100D6394F /* LambdaSDK */,
 				04E7A593268DF46E00D6394F /* Model */,
+				04EE6D3826903EB1004283D2 /* FGTQuakeResults.h */,
+				04EE6D3926903EB1004283D2 /* FGTQuakeResults.m */,
 			);
 			path = "Quakes-Objc";
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				04E7A590268DF46300D6394F /* FGTQuake.m in Sources */,
 				BDFC8F9323FDA0A100A39B21 /* main.m in Sources */,
 				BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */,
+				04EE6D3A26903EB1004283D2 /* FGTQuakeResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
