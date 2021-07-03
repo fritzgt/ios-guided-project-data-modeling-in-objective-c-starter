@@ -55,7 +55,9 @@
     
     
     NSNumber *magnitude = [properties objectForKey:@"mag"];
-    if (![magnitude isKindOfClass:NSNumber.class]) return nil;
+    if([magnitude isKindOfClass:NSNull.class]) magnitude = nil;
+    else if (![magnitude isKindOfClass:NSNumber.class]) return nil;
+
     
     NSString *place = [properties objectForKey:@"place"];
     if (![place isKindOfClass: NSString.class]) return nil;
@@ -91,7 +93,8 @@
     if(![type isKindOfClass:NSString.class]) return nil;
     
     NSString *alert = [properties objectForKey:@"alert"];
-    if(![alert isKindOfClass:NSString.class]) return nil;
+    if([magnitude isKindOfClass:NSNull.class]) alert = nil;
+    else if(![alert isKindOfClass:NSString.class]) return nil;
     
     
     //2.Return the properties to the init
